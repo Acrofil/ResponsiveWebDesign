@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   
   background-color: rgb(238, 222, 206);
@@ -49,39 +48,19 @@ a:hover {
   display: flex;
   align-content: center;
   text-align: center;
-  ;
+  
 }
 
 .column.middle {
   background-color: rgb(160, 172, 179);
-    text-align: left;
-    padding-right: 15px;
-    padding-left: 15px;
+  text-align: left;
+  padding-right: 15px;
+  padding-left: 15px;
   border-radius: 15px;
   width: auto;
   height: auto;
-  display: flex:
- 
   
-}
-
-
-
-
-#footer {
-  font-size: 1.5rem;
-  background: linear-gradient(0deg, darkolivegreen 35%, rgba(160, 172, 179));
-  padding: 10px;
-  margin-top: 10px;
-  text-align: center;
-  border-radius: 15px;
-}
-
-#img-div {
-  display: inline-grid;
-  background-color: violet;
-  grid-row-start: 1;
-  grid-column: 1 / 2;
+  
 }
 
 #image {
@@ -90,20 +69,12 @@ a:hover {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
   border-radius: 10px;
-
+  display: block;
+ 
 }
 
-#image2 {
-  width: 80%;
-  height: auto;
-  max-width: 500px;
-  grid-row-start: 1;
-}
-
-
-#img2 {
+#imgage2 {
   
   width: 100%;
   height: auto;
@@ -111,15 +82,16 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  border-radius: 0px;
+  border-radius: 10px;
 
 }
 
 
 #img-caption {
-    font-size: 25px;
+  font-size: 25px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
 }
 
 #headline {
@@ -134,12 +106,21 @@ a:hover {
 #headline::after {
   position: absolute;
   content: "";
-  width: 10%;
+  width: 6%;
   height: 7%;
   background-color: rgb(50, 71, 13);
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#footer {
+  font-size: 1.5rem;
+  background: linear-gradient(0deg, darkolivegreen 35%, rgba(160, 172, 179));
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 15px;
 }
 
 #quote {
