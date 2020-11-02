@@ -94,6 +94,10 @@ a:hover {
   padding-bottom: 20px;
 }
 
+#tribute-info {
+  text-align: center;
+}
+
 #headline {
   
   font-size: 1.5rem;
