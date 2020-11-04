@@ -43,6 +43,10 @@ a:hover {
   background-color:rgb(160, 172, 179);
 }
 
+a:focus {
+  background-color:rgb(160, 172, 179);
+}
+
 .row {
   position: relative;
   display: flex;
@@ -54,6 +58,7 @@ a:hover {
 .column.middle {
   background-color: rgb(160, 172, 179);
   text-align: left;
+  display: block;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -63,7 +68,9 @@ a:hover {
   height: auto;
   align-self: center;
   
-  
+
+
+
 }
 
 #image {
@@ -97,11 +104,18 @@ a:hover {
   padding-bottom: 20px;
 }
 
+#img-caption2 {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
 #tribute-info {
   text-align: center;
 }
 
-#headline {
+.headline {
   
   font-size: 1.5rem;
   position: relative;
@@ -110,11 +124,11 @@ a:hover {
     
 }
 
-#headline::after {
+.headline::after {
   position: absolute;
   content: "";
-  width: 6%;
-  height: 7%;
+  width: 10%;
+  height: 5%;
   background-color: rgb(50, 71, 13);
   bottom: 0;
   left: 50%;
@@ -129,6 +143,7 @@ a:hover {
   text-align: center;
   border-radius: 15px;
 }
+
 
 #quote {
   
@@ -148,11 +163,27 @@ a:hover {
   text-align: center;
 }
 
+li {
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  list-style-type: disc;
+  display: list-item;
+  min-height: 50px;
+  line-height: 30px;
+  margin: auto;
+  
+}
+
+
 
 
 @media (max-width: 600px) {
   .row {
     -webkit-flex-direction: column;
     flex-direction: column;
+  
   }
+
+  
 }
