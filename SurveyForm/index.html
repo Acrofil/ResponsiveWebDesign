@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+</head>
+
+<header class="header">
+  <h1 id="title" class="text-center">Survey Form</h1>
+  <p id="description" class="description text-center">
+    Thank you for taking the time to fill out this surver!
+  </p>
+</header>
+
+<body>
+  <div class="wrapper">
+    <div class="container-box">
+
+
+
+      <form id="survey-form">
+        <div class="box">
+          <p class="form-heading">Personal Details</p>
+
+          <div class="form">
+            <label id="name-label" for="name">Firstname</label>
+            <input class="form-control" type="text" id="name" name="Firstname" placeholder="Enter your Firstname.."
+              required />
+          </div>
+          <div class="form">
+            <label for="lastname" id="lastname-label">Lastname</label>
+            <input type="text" id="name" placeholder="Enter your Lastname.." required />
+          </div>
+          <div class="form">
+            <label for="email" id="email-label">Email</label>
+
+
+            <input type="email" class="form-control" id="email" placeholder="Email@dot.com" required />
+          </div>
+        </div>
+
+
+        <div class="box">
+          <p class="form-heading">Feedback</p>
+          <div class="form">
+            <label for="number" id="number-label">Enter your number</label>
+            <input type="number" id="number" placeholder="number" min="1" max="1000" required />
+          </div>
+
+          <div class="form">
+            <label for="dropdown" id="dropdown-tag">Did you enjoy?</label>
+            <select id="dropdown" name="options">
+              <option value="first-option">Yes</option>
+              <option value="second-option">Can be better</option>
+              <option value="third-option">Not much</option>
+              <option value="forth-option">No</option>
+            </select>
+          </div>
+
+
+          <div class="form">
+            <fieldset>
+              <legend class="legend">Would you recomend us?</legend>
+
+              <label class="radio-button" for="recomend" id="recomend">
+                <input type="radio" name="name" value="maybe">
+                Maybe</label>
+
+              <label class="radio-button" for="recomend" id="recomend">
+                <input type="radio" name="name" value="maybe">
+                Maybe</label>
+
+              <label class="radio-button" for="recomend" id="recomend">
+                <input type="radio" id="test" name="name" value="No">
+                Maybe</label>
+            </fieldset>
+
+          </div>
+        </div>
+
+
+        <div class="box">
+          <p class="form-heading"> Recommendations</p>
+          <div>
+            <fieldset>
+              <legend class="legend">What do you think we can improve?</legend>
+
+
+              <label for="option1" class="check-box">
+                <input type="checkbox" name="option1" value=" "> asd
+              </label>
+
+              <label for="option1" class="check-box">
+                <input type="checkbox" name="option1" value=" "> asd
+              </label>
+
+              <label for="option1" class="check-box">
+                <input type="checkbox" name="option1" value=" "> asd
+              </label>
+
+            </fieldset>
+          </div>
+          <div class="form">
+            <label>Comment</label>
+            <textarea id="comment" placeholder="Enter your comment here"></textarea>
+          </div>
+        </div>
+        <div class="box2">
+          <button id="submit">Submit your survey</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>Thank you</p>
+  </footer>
+
+
+</body>
+
+
+</html>
